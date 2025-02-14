@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin and Win BIG!</title>
+    <link rel="stylesheet" href="index.css">
+
+
+        <style>
+            body {
+                margin: 0;
+                overflow: hidden;
+                background: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(25,25,25,1) 100%);
+
+            }
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                pointer-events: none;
+            }
+        </style>
+    
+</head>
+<body>
+    
+    <div id="header">
+        <h1>Spin and Win BIG!</h1>
+    </div>
+    <div id="notification-container">
+        <div id="notification" class="notification">
+            <p id="notification-text"></p>
+        </div>
+
+    </div>
+    <div id="main">
+        <canvas id="confettiCanvas"></canvas>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>Congratulations!</h2>
+                <p id="popup-text">hello</p>
+                <button id="popup-button" onclick="closePopup()">Claim</button>
+            </div>
+        </div>
+         
+            <div class="container">
+        
+                <div id="circle">
+                    <div class="segment">
+                        <img src="Images/10_naira-removebg-preview.png" class="segment-image img1">
+                        <img src="Images/btc-removebg-preview.png" class="segment-image img2">
+                        <img src="Images/lots_of_1000-removebg-preview.png" class="segment-image img3">
+                        <img src="Images/1_dollar-removebg-preview.png" class="segment-image img4">
+                        <img src="Images/200_naira-removebg-preview.png" class="segment-image img5">
+                        <img src="Images/image-removebg-preview (1).png" class="segment-image img6">
+        
+                    </div>
+              
+                </div>
+                <div class="marker"></div> <!-- Arrow to indicate the result -->
+                <button id="circle-button">Spin</button>
+            </div>
+
+    </div>
+
+   
+    <script src="index.js"></script>
+</body>
+</html>
