@@ -188,8 +188,7 @@ top:-7%;
 
 .segment-image {
     position: absolute;
-    
-
+   
    
     
     transition: transform 3s ease-out;
@@ -285,5 +284,43 @@ top:-7%;
 #circle-button:active {
     transform: translate(-50%, -50%) scale(0.95);
     box-shadow: 0 3px 8px rgba(231, 76, 60, 0.3);
+}
+@media screen and (max-width: 600px) {
+    #circle {
+        width: 300px;
+        height: 300px;
+    }
+    #circle-button {
+        width: 30%;
+        height: 30%;
+        font-size: 14px;
+        top: 45%;
+        left: 50%;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .segment {
+        position:relative;
+        top: 40%;
+        right: 4%;
+  
+        transform: scale(0.85   );
+        
+    }
+    #circle-button:hover {
+        background: linear-gradient(135deg, #ff5252, #c0392b);
+        box-shadow: 0 6px 14px rgba(231, 76, 60, 0.5);
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .img3 { transform: rotate(180deg) translate(115px) rotate(-180deg);width: 110px; /* Adjusted smaller size */
+        height: 70px; left: 37%;
+        top: 30%;}
+        .notification-container {
+
+            align-items: center;
+        
+        }
+    
 }
 
